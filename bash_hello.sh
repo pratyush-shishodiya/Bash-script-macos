@@ -101,15 +101,24 @@
 
 #FILE FOUND SCRIPT
 
-echo -e "Enter the name of file: \c"
-read File_name
+# echo -e "Enter the name of file: \c"
+# read File_name
 
-cd /Users/pratyushshishodiya/Desktop/playbook_ansible_elk
+# cd /Users/pratyushshishodiya/Desktop/playbook_ansible_elk
 
-if [ -e $File_name ]
-then
-    echo "$File_name found"
-    ansible-playbook main.yml
-else
-    echo "$File_name not found"
-fi
+# if [ -e $File_name ]
+# then
+#     echo "$File_name found"
+#     ansible-playbook main.yml
+# else
+#     echo "$File_name not found"
+# fi
+
+
+#->running logstash and kibana through bash script
+
+cd /Users/pratyushshishodiya/Desktop/elasticsearch-8.3.3
+bin/elasticsearch
+
+cd /Users/pratyushshishodiya/Desktop/kibana-8.3.3
+bin/kibana
