@@ -1,32 +1,29 @@
 #! /bin/bash
+
+#-----------------------------------------------------------------------
 #echo "Hello world"
-
-
 #->Simple echo cmd
-
 #echo $PWD
 #echo $BASH
 #echo $HOME
 #echo $BASH_VERSION
-
 #cd /Users
-
 #echo $PWD
 
-
+#----------------------------------------------------------------------
 
 #->cmd with variable
 #name=Mark
 #echo The name is $name
 
-
+#----------------------------------------------------------------------
 
 #cmd->reading the variable or taking he input
 #echo "Enter name:"
 #read name
 #echo "Entered name : $name"
 
-
+#-----------------------------------------------------------------------
 #->sum of two variable
 #echo "Sum:"
 #read x
@@ -35,21 +32,21 @@
 #sum ='expr $x + $y'
 #echo "X+Y: $sum"
 
-
+#----------------------------------------------------------------------
 
 #read -p "Enter the 1st no:" n1
 #read -p "Enter the 2nd no:" n2
 #sum=$(($n1 + $n2))
 #echo "$sum"
 
-
+#----------------------------------------------------------------------
 #->username and password
 #read -p "Username:" user_name
 #read -sp "password:" password
 #echo "username : $user_name"
 #echo "password : $password"
 
-
+#-----------------------------------------------------------------------
 
 #->passing the argument
 #  echo $1 $2 $3  '> echo $1 $2 $3'
@@ -82,7 +79,7 @@
 # if (( "$a" <= "$b" ))
 # if (( "$a" >= "$b" ))
 
-
+#-------------------------------------------------------------------
 
 #->string operation
 
@@ -97,7 +94,7 @@
 #     echo "Count is greater than Var"
 # fi
 
-
+#---------------------------------------------------------------------
 
 #FILE FOUND SCRIPT
 
@@ -114,7 +111,7 @@
 #     echo "$File_name not found"
 # fi
 
-
+#----------------------------------------------------------------------
 #->running logstash and kibana through bash script
 
 # cd /Users/pratyushshishodiya/Desktop/elasticsearch-8.3.3
@@ -126,28 +123,31 @@
 # cd /Users/pratyushshishodiya/Desktop/xyz
 # cat sample.py
 
+#-------------------------------------------------------------------------
+#Sample scripting for file check and creating system::::
+# cd /Users/pratyushshishodiya/Desktop/xyz
+# #checking file is present or not
+# echo -e "enter the file name: \c"
+# read File_name
+# if [ -e $File_name ]
+# then
+#     echo "File found"
+#     cat $File_name
+# else
+#     echo "File not found,Do you want to create new file?"
+#     read choice
+#     var1=yes
+#     var2=no
 
-#Sample scripting for filing::::
-cd /Users/pratyushshishodiya/Desktop/xyz
-#checking file is present or not
-echo -e "enter the file name: \c"
-read File_name
-if [ -e $File_name ]
-then
-    echo "File found"
-    cat $File_name
-else
-    echo "File not found,Do you want to create new file?"
-    read choice
-    var1=yes
-    var2=no
+#     if [ $choice == $var1 ]
+#     then
+#         touch $File_name
+#         vim $File_name
+#         cat $File_name
+#     else
+#         echo "byeee"
+#     fi
+# fi
 
-    if [ $choice == $var1 ]
-    then
-        touch $File_name
-        vim $File_name
-        cat $File_name
-    else
-        echo "byeee"
-    fi
-fi
+
+ 
