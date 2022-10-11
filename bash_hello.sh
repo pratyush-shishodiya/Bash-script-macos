@@ -117,8 +117,37 @@
 
 #->running logstash and kibana through bash script
 
-cd /Users/pratyushshishodiya/Desktop/elasticsearch-8.3.3
-bin/elasticsearch
+# cd /Users/pratyushshishodiya/Desktop/elasticsearch-8.3.3
+# bin/elasticsearch
 
-cd /Users/pratyushshishodiya/Desktop/kibana-8.3.3
-bin/kibana
+# cd /Users/pratyushshishodiya/Desktop/kibana-8.3.3
+# bin/kibana
+
+# cd /Users/pratyushshishodiya/Desktop/xyz
+# cat sample.py
+
+
+#Sample scripting for filing::::
+cd /Users/pratyushshishodiya/Desktop/xyz
+#checking file is present or not
+echo -e "enter the file name: \c"
+read File_name
+if [ -e $File_name ]
+then
+    echo "File found"
+    cat $File_name
+else
+    echo "File not found,Do you want to create new file?"
+    read choice
+    var1=yes
+    var2=no
+
+    if [ $choice == $var1 ]
+    then
+        touch $File_name
+        vim $File_name
+        cat $File_name
+    else
+        echo "byeee"
+    fi
+fi
