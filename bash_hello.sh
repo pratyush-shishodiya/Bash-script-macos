@@ -148,6 +148,171 @@
 #         echo "byeee"
 #     fi
 # fi
+#--------------------------------------------------------------------------------
+
+# read file_name
+# if [ -e $file_name ]
+# then
+#     if [ -w $file_name ]
+#     then 
+#         echo "Type something:"
+#         cat >> $file_name
+#     else
+#         echo "The file do not"
+#     fi
+# else    
+#     echo "File not found"
+# fi
 
 
- 
+
+
+#----------------------------------------------------------------------------------
+#and operator.
+
+# age=25
+# #if [ "$age" -gt 18 ] && [ "$age" -lt 30 ]
+# if [ "$age" -gt 18  -a "$age" -lt 30 ]
+# then 
+#     echo "Valid age"
+# else 
+#     echo "Not a valid age"
+# fi
+
+
+#-------------------------------------------------------
+
+# age=25
+# #if [ "$age" -gt 18 ] || [ "$age" -eq 18 ]
+# if [ "$age" -gt 18  -o "$age" -eq 18 ]
+# then
+#     echo "Valid age"
+# else    
+#     echo "Not a valid age"
+# fi
+
+
+#-------------------------------------------------------
+
+# echo "Enter the two number:"
+# read n1
+# read n2
+
+
+# # echo $(( n1 + n2 ))
+# # echo $(( n1 - n2 ))
+# # echo $(( n1 * n2 ))
+# # echo $(( n1 / n2 ))
+
+
+# echo $(expr $n1 + $n2 )
+# echo $(expr $n1 - $n2 )
+# echo $(expr $n1 * $n2 )
+# echo $(expr $n1 / $n2 )
+
+
+
+#----------------------------------------------------------------
+
+#Decimal operater
+# n1=20.5
+# n2=5
+
+# echo "$n1 + $n2 " |bc
+# echo "$n1 - $n2 " |bc
+# echo "$n1 * $n2 " |bc
+# echo "scale=2;$n1 / $n2 " |bc
+
+#----------------------------------------------------------------
+
+# case expression in
+#     pattern1 )
+#         statements ;;
+#     pattern2 )
+#         statements ;;
+#     ...
+# esac 
+
+
+# echo "Enter the keyword:"
+# read vehicle
+
+# case $vehicle in
+#     "car" )
+#         echo "The vehicle is car " ;;
+#     "Truck" )
+#         echo "The vehicle is truck" ;;
+#     "Bike" )
+#         echo "The vehicle is bike" ;;
+#     "Auto" )
+#         echo "The vehicle is Auto"  ;;
+#     * )
+#         echo "Unknown vehicle" ;;
+# esac
+
+
+# echo "Enter the value:"
+# read value
+
+# case $value in
+#     [1-10] )
+#         echo "The value is less than 10 " ;;
+#     [10-20])
+#         echo "The value is more than 10 but less than 20 " ;;
+#     [20-30])
+#         echo "The value is more than 20 but less than 30 " ;;
+#     [30-40])
+#        echo "The value is more than 30 but less than 40 " ;;
+#     * )
+#        echo "The value is undefined" ;;
+# esac
+
+# echo -e "Enter the value: \c"
+# read value
+
+# case $value in
+#     [a-z] )
+#         echo "Between a-z" ;;
+#     [A-Z] )
+#         echo "Between A-Z " ;;
+#     [0-9] )
+#         echo "Integers" ;;
+#     ? )
+#        echo "Diffrent pattern" ;;
+#     * )
+#        echo "The value is undefined" ;;
+# esac
+
+
+#--------------------------------- ---------------------------
+# arr=('a' 'b' 'c')
+
+# echo "${arr[@]}"
+# echo "${arr[0]}"
+# echo "${arr[1]}"
+# echo "${arr[2]}"
+# echo "${!arr[@]}"
+# echo "${#arr[@]}"
+
+# arr[3]='d'
+# echo "${arr[@]}"
+# unset arr[2]
+# echo "${arr[@]}"
+
+
+# string='abcdefghijk'
+# echo "${string[@]}"
+# echo "${string[1]}"
+
+
+
+
+
+
+
+
+
+
+
+
+
