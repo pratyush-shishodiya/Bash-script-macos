@@ -336,8 +336,110 @@
     
 # done
 
+#------------------------------------------------------------------------
+#script for readiing a file.
+
+# while read p
+# do
+#     echo "$p"
+# done < bash_hello.sh
 
 
+# cat bash_hello.sh| while read p
+# do
+#     echo "$p"
+# done 
+
+# while IFS= read -r line
+# do
+#     echo "$line"
+# done < bash_hello.sh
 
 
+#------------------------------------------------------------------------
+#syntax
 
+# until [condition]
+# do
+#     cmd1
+#     cmd2
+#     cmd3
+# done
+
+
+# n=1
+# until [ $n -ge 10 ]
+# do 
+#     echo $n
+#     n=$((n+1))
+#     sleep 1
+# done
+
+
+#------------------------------------------------------------------------
+#for loop synatx
+
+# for var in 1 2 3 4 ..... N 
+# do
+#     cmd1
+#     cmd2
+#     cmd3
+# done
+
+# for i in 1 2 3 4 5
+# do 
+#     echo "$i"
+# done
+
+
+# for i in {1..10 }
+# do 
+#     echo "$i"
+# done
+
+# for i in {0..10..2}
+# do 
+#     echo $i
+# done
+#echo ${BASH_VERSION}
+
+#--------------------------------------------------------------------
+#select loop
+
+# select name in nishu pratyush priyanshu
+# do
+#     case $name in
+#         nishu )
+#             echo "Nishu selected";;
+#     case $name in
+#         pratyush )
+#             echo "pratyush selected";;
+#     case $name in
+#         priyanshu )
+#             echo "priyanshu selected";;
+
+#     esac
+# done
+
+#___________________________________________________________________________
+#fuction in bash script
+
+
+# function openterminal() {
+#     sleep 3
+#     open -a terminal "$PWD"
+#     echo "Opeining"
+# }
+
+
+# function print() {
+#     echo $1 $2
+# }
+
+# quit() {
+#     exit
+# }
+# #quit
+# #openterminal
+
+# print hello hy
