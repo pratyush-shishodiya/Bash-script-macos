@@ -290,17 +290,17 @@
 # echo "${arr[@]}"
 # echo "${arr[0]}"
 # echo "${arr[1]}"
-# echo "${arr[2]}"
-# echo "${!arr[@]}"
-# echo "${#arr[@]}"
+# echo "${arr[2]}"      ----------->particular index
+# echo "${!arr[@]}"    ----------->no. of index
+# echo "${#arr[@]}"   ----------->total no of values
 
-# arr[3]='d'
+# arr[3]='d'        --------------->adding a new var
 # echo "${arr[@]}"
-# unset arr[2]
+# unset arr[2]     -------------->deleting a array var
 # echo "${arr[@]}"
 
 
-# string='abcdefghijk'
+# string='abcdefghijk'    ----------->variable
 # echo "${string[@]}"
 # echo "${string[1]}"
 
