@@ -443,3 +443,58 @@
 # #openterminal
 
 # print hello hy
+
+#-----------------------------------------------------------------------------
+#local varable
+
+
+
+
+# function print(){
+#     local name=$1
+#     echo "The name is $name"
+# }
+
+# name=tom
+# echo "The name is :$name"
+
+# print hello
+
+
+# echo "The name is :$name"
+
+#----------------------------------------------------------------------------
+
+#script for checking a file whether it exist or not.
+
+# usage(){
+#     echo "Provide argument to script"
+#     echo "Usage : $0 argument"
+# }
+
+
+# is_file_exist() {
+#     local file_name="$1"
+#     [[ -f "$file_name" ]] && return 0 || return 1
+# }
+
+# [[ $# -eq 0 ]] && usage
+
+
+# if ( is_file_exist "$1" )
+# then
+#     echo 'file found'
+# else
+#     echo 'file not found'
+
+# fi
+
+#----------------------------------------------------------------------------
+
+# var =31
+
+# readonly var
+
+# var=50
+
+# echo "var => $var"
